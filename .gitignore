@@ -1,0 +1,7 @@
+node_modules/
+reports/
+.DS_Store
+.stryker-tmp/
+coverage/
+coding-exercises.zip
+coding-exercises-main

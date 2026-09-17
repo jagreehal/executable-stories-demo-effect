@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "plugins": ["@stryker-mutator/vitest-runner"],
+  "coverageAnalysis": "perTest",
+  "reporters": ["html", "clear-text", "progress"],
+  "mutate": ["src/rob/**/*.ts", "!src/**/*.test.ts"],
+  "ignorePatterns": [".claude", ".agents", "reports"]
+}

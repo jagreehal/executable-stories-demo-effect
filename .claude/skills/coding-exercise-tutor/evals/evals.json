@@ -1,0 +1,51 @@
+{
+  "skill_name": "coding-exercise-tutor",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Complete the game-of-life coding exercise in coding-exercises-main/game-of-life using executable-stories, and teach me how you solved it as you go. Tasks 1-3 and the edge-handling are the core; skip the animation task.",
+      "expected_output": "src/exercises/game-of-life/{game-of-life.ts, game-of-life.story.test.ts}, all stories green, reports/game-of-life.html regenerated, narration that reads as a TDD tutorial (seams, ordered slices, red then green per slice, prediction questions, wrap-up).",
+      "files": ["coding-exercises-main/game-of-life/README.md"],
+      "assertions": [
+        "Each of the four README rules (under-population, survival with 2-3, overcrowding >3, birth with exactly 3) has its own scenario whose title or steps name the rule",
+        "Edge/boundary behaviour (cells on the grid edge or corner) is covered by at least one scenario with an explicit stated assumption (e.g. dead beyond edges or wrap-around)",
+        "A single-iteration step over a whole grid is tested with a concrete before/after grid taken from a known pattern (e.g. blinker) rather than a value computed by the implementation",
+        "Every it() in the story test file calls story.init(task) with the task argument",
+        "All tests in the exercise story file pass (test runner exit 0, zero failures)",
+        "An HTML report for the exercise was produced by the StoryReporter (an .html file in outputs/ containing the scenario titles)",
+        "Teaching prose is captured as story doc entries: at least 3 calls among story.section / story.code / story.mermaid / story.table / story.note in the test file",
+        "The story test file never calls story.state or story.screenshot (those derive a Storyboard filmstrip)",
+        "story.feature includes a glossary with at least one domain term from the README",
+        "Money or world-state snapshots in the story file are story.table (Who/Before/After or equivalent), not a pair of story.kv lines that restate the step",
+        "narration.md opens with a plan that names the public interface (seams) and lists ordered behaviour slices BEFORE any implementation code is shown",
+        "narration.md shows a failing (red) test run result before the corresponding passing (green) run for at least 3 separate slices",
+        "narration.md contains at least one prediction question posed to the learner before a result is revealed (e.g. Before we run it ... what do you expect)",
+        "narration.md ends with a wrap-up: a table or list of slices with status, and key takeaways",
+        "No assertion in the test file is tautological (expected values are literals or hand-worked from the README, never recomputed by calling the implementation or the same formula)"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Can you work through coding-exercises-main/split-the-treasure for me? I want to actually understand the approach, not just get code.",
+      "expected_output": "src/exercises/split-the-treasure/{split-the-treasure.ts, split-the-treasure.story.test.ts}, all stories green, reports/split-the-treasure.html, tutorial-style narration with prediction questions and per-slice takeaways.",
+      "files": ["coding-exercises-main/split-the-treasure/README.md"],
+      "assertions": [
+        "All four README example chests appear as scenarios with the README's stated outcomes: [4,4,4] splits 3 ways; [27,7,20] splits 2 ways only; [6,3,2,4,1] splits 2 ways but not 3 or 4; [3,2,7,7,14,5,3,4,9,2] splits 4 ways",
+        "The solution returns HOW the treasure is split (the groups), not only whether it can be, as the README asks",
+        "The bonus question ([3,3,3,3,2,2,2,2,2,2,2,2] between four seekers) is addressed either as a passing scenario or an explicit it.todo with the reasoning",
+        "Every it() in the story test file calls story.init(task) with the task argument",
+        "All tests in the exercise story file pass (test runner exit 0, zero failures)",
+        "An HTML report for the exercise was produced by the StoryReporter (an .html file in outputs/ containing the scenario titles)",
+        "Teaching prose is captured as story doc entries: at least 3 calls among story.section / story.code / story.mermaid / story.table / story.note in the test file",
+        "The story test file never calls story.state or story.screenshot (those derive a Storyboard filmstrip)",
+        "story.feature includes a glossary with at least one domain term from the README",
+        "Money or world-state snapshots in the story file are story.table (Who/Before/After or equivalent), not a pair of story.kv lines that restate the step",
+        "narration.md opens with a plan that names the public interface (seams) and lists ordered behaviour slices BEFORE any implementation code is shown",
+        "narration.md shows a failing (red) test run result before the corresponding passing (green) run for at least 3 separate slices",
+        "narration.md contains at least one prediction question posed to the learner before a result is revealed (e.g. Before we run it ... what do you expect)",
+        "narration.md ends with a wrap-up: a table or list of slices with status, and key takeaways",
+        "No assertion in the test file is tautological (expected values are literals or hand-worked from the README, never recomputed by calling the implementation or the same formula)"
+      ]
+    }
+  ]
+}
