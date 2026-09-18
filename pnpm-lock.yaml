@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.0-rc.115
         version: 4.0.0-rc.115
       effect-analyzer:
-        specifier: 3.6.1
-        version: 3.6.1(effect@4.0.0-rc.115)
+        specifier: 3.6.2
+        version: 3.6.2(effect@4.0.0-rc.115)
     devDependencies:
       '@stryker-mutator/core':
         specifier: 10.0.0
@@ -1405,8 +1405,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  effect-analyzer@3.6.1:
-    resolution: {integrity: sha512-G8HFGkXsLzcLHM7rd3mCJ4DeWX3eZWS2XlNcw//Ss8xqCSIrg2w1qcjAJKuHu/oHOGofIj4toQglCtwlr2P6Mw==}
+  effect-analyzer@3.6.2:
+    resolution: {integrity: sha512-VvpUkqC5WKvkLLLQzckpwk39m0oXVS6Ti0iqY0Pjhd3PKvw+getc+ZF2bbmk6MvdV0u0rNWgh0LteY7fahY7Cg==}
     hasBin: true
     peerDependencies:
       effect: ^4.0.0-rc.112
@@ -3877,7 +3877,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  effect-analyzer@3.6.1(effect@4.0.0-rc.115):
+  effect-analyzer@3.6.2(effect@4.0.0-rc.115):
     dependencies:
       '@effect/tsgo': 0.39.1
       effect: 4.0.0-rc.115
