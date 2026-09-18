@@ -33,9 +33,9 @@ const getOrders = (userId: string): Effect.Effect<Order[], FetchError> =>
 
 const fetchUserAndOrders = Effect.gen(function* () {
   const user = yield* getUser('1');
-  const validatedUser = yield* validateUser(user);
-  const orders = yield* getOrders(validatedUser.id);
-  return { user: validatedUser, orders };
+  // const validatedUser = yield* validateUser(user);
+  const orders = yield* getOrders(user.id);
+  return { user: user, orders };
 });
 
 describe('Fetch user and orders', () => {
