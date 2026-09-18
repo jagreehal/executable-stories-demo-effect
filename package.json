@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "effect": "4.0.0-rc.115",
-    "effect-analyzer": "3.6.0"
+    "effect-analyzer": "3.6.1"
   }
 }

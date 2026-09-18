@@ -21,3 +21,4 @@ jobs:
       - uses: jagreehal/effect-analyzer@v3
         with:
           path: src
+          include-tests: true
