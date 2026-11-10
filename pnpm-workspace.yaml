@@ -1,3 +1,18 @@
+# Stryker calls the classic TypeScript compiler API. TypeScript 7 no longer
+# exports it, so Stryker gets the last classic compiler on its own.
+packageExtensions:
+  '@stryker-mutator/core':
+    dependencies:
+      typescript: 6.0.3
+
 allowBuilds:
   esbuild: true
   fsevents: false
+  '@ffmpeg-installer/darwin-arm64': true
+  '@ffmpeg-installer/darwin-x64': true
+  '@ffmpeg-installer/linux-arm': true
+  '@ffmpeg-installer/linux-arm64': true
+  '@ffmpeg-installer/linux-ia32': true
+  '@ffmpeg-installer/linux-x64': true
+  '@ffmpeg-installer/win32-ia32': true
+  '@ffmpeg-installer/win32-x64': true
